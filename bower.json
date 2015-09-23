@@ -1,0 +1,11 @@
+{
+  "name": "amyeddins",
+  "main": "index.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/manufacturedba/amyeddins",
+  "authors": [
+    "Amy Eddins <amyleigheddins@gmail.com>"
+  ],
+  "description": "Amy Eddins Website",
+  "license": "None"
+}
