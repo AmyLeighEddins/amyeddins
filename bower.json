@@ -2,10 +2,14 @@
   "name": "amyeddins",
   "main": "index.js",
   "version": "0.0.0",
-  "homepage": "https://github.com/manufacturedba/amyeddins",
+  "homepage": "https://github.com/amyleigheddins/amyeddins",
   "authors": [
     "Amy Eddins <amyleigheddins@gmail.com>"
   ],
   "description": "Amy Eddins Website",
-  "license": "None"
+  "license": "None",
+  "dependencies": {
+    "angular": "~1.4.6",
+    "bootstrap": "~3.3.5"
+  }
 }
