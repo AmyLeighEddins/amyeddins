@@ -26,5 +26,9 @@
     "url": "https://github.com/heroku/node-js-getting-started/issues"
   },
   "homepage": "https://github.com/heroku/node-js-getting-started#readme",
-  "author": "Amy Eddins"
+  "author": "Amy Eddins",
+  "devDependencies": {
+    "browser-sync": "^2.10.0",
+    "gulp": "^3.9.0"
+  }
 }
