@@ -1,0 +1,43 @@
+.sidebar {
+  float: left;
+  position: fixed;
+  width: 25%;
+  height: 100%;
+  font-family: "Century Gothic";
+  background-color: rgb(91, 62, 126);
+  color: white;
+  padding-top: 10px;
+  padding-left: 20px;
+  vertical-align: bottom;
+  font-size: 30px;
+  align: 30px;
+}
+.sidebarTitle {
+  font-size: 70px;
+  font-family: "Elephant";
+  padding-bottom: 20px;
+  padding-top: 80%;
+}
+.sidebarLinks {
+  padding-top: 5px;
+  padding-left: 5px;
+  position: absolute;
+  font-size: 20px;
+}
+.links {
+  color: white;
+  padding-left: 30px;
+}
+.labels {
+  font-weight: bold;
+  float: center;
+}
+.content {
+  color: rgb(91, 62, 126);
+  float: right;
+  padding-left: 27%;
+  padding-right: 40%;
+  font-size: 15px;
+  position: fixed;
+  z-index: -1;
+}
