@@ -2,7 +2,7 @@
   "name": "amyeddins",
   "version": "0.1.0",
   "description": "personal website",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "start": "node index.js"
   },
@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/AmyLeighEddins/amyeddins/issues"
   },
-  "homepage": "https://github.com/AmyLeighEddins/amyeddins#readme"
+  "homepage": "https://github.com/AmyLeighEddins/amyeddins#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "engine": {
+    "node": "0.12.2"
+  }
 }
