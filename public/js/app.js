@@ -2,10 +2,6 @@ var app = angular.module('AmyEddins', ['ngRoute']);
 
 app.config(['$routeProvider', function($routeProvider) {
   $routeProvider
-    .when('/Home', {
-      templateUrl : 'index.html',
-      controller : 'HomeController'
-    })
     .when('/About', {
       templateUrl : 'about.html',
       controller : 'AboutController'
@@ -23,19 +19,18 @@ app.config(['$routeProvider', function($routeProvider) {
       controller : 'ContactController'
     })
     .otherwise({
-      redirectTo: '/Home'
+      redirectTo: '/About'
     });
 }]);
 
 app.controller('MainController', ['$scope', function($scope){
   $scope.actions = [
-    {"id": 1, name:"home", link: "#/Home"},
-    {"id": 2, name:"about", link: "#/About"},
-    {"id": 3, name:"experience and skills", link: "#/Experience"},
-    {"id": 4, name:"portfolio", link: "#/Portfolio"},
+    {"id": 1, name:"about", link: "#/About"},
+    {"id": 2, name:"experience and skills", link: "#/Experience"},
+    {"id": 3, name:"portfolio", link: "#/Portfolio"},
     {"id": 4, name:"github", link: "https://github.com/AmyLeighEddins"},
-    {"id": 4, name:"linkedin", link: "https://www.linkedin.com/in/amy-eddins-8a223571"},
-    {"id": 5, name:"contact", link: "#/Contact"},
+    {"id": 5, name:"linkedin", link: "https://www.linkedin.com/in/amy-eddins-8a223571"},
+    {"id": 6, name:"contact", link: "#/Contact"},
   ];
   $scope.currentAction = $scope.actions[0];
 }]);

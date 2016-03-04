@@ -1,6 +1,6 @@
 .sidebar {
   float: left;
-  position: fixed;
+  position: absolute;
   width: 25%;
   height: 100%;
   font-family: "Century Gothic";
@@ -15,8 +15,8 @@
 .sidebarTitle {
   font-size: 70px;
   font-family: "Elephant";
-  padding-bottom: 20px;
-  padding-top: 80%;
+  padding-bottom: 15px;
+  padding-top: 85%;
 }
 .sidebarLinks {
   padding-top: 5px;
@@ -35,9 +35,11 @@
 .content {
   color: rgb(91, 62, 126);
   float: right;
-  padding-left: 27%;
-  padding-right: 40%;
+  height: 100%;
+  padding-left: 30%;
+  padding-right: 10%;
   font-size: 15px;
   position: fixed;
   z-index: -1;
+  overflow: auto;
 }
