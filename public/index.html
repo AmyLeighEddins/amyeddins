@@ -20,7 +20,7 @@
 
     <script type="text/ng-template" id="experience.html">
       <h1 class="labels"> Experience and Skills </h1>
-      <h2 class="labels"> Job History</h2>
+      <h2 class="labels"> Job History (Relevant Experience)</h2>
       <h3> Command Alkon - Birmingham, AL </h3>
       <h4> Programmer Analyst - Full-time (February 2015 - Present) </h4>
       <h5> Work on Mobile Development team </h5>
@@ -94,24 +94,31 @@
         </ul>
     </script>
 
-    <script type="text/ng-template" id="portfolio.html">
+    <!-- <script type="text/ng-template" id="portfolio.html">
       <h1 class="labels"> Portfolio </h1>
-    </script>
+    </script> -->
 
     <script type="text/ng-template" id="contact.html">
-      <h1 class="labels"> Contact </h1>
-      <h4> <span class="labels"> Email: </span> AmyLeighEddins@gmail.com </h4>
+        <h1 class="labels"> Contact </h1>
+        <h4> <span class="labels"> Email: </span> AmyLeighEddins@gmail.com </h4>
     </script>
 
     <div ng-controller="MainController">
       <div class="sidebar">
-        <div class="sidebarTitle">
+        <div class="title">
           Amy Eddins
         </div>
-        <h2> developer in birmingham, alabama. </h2>
-        <div class="sidebarLinks">
-          <div ng-repeat="action in actions">
-            <a id="{{action.name}}button" href="{{action.link}}" class="links">{{action.name}}</a>
+        <button class="mobile-toggle" ng-click="toggleLinks()">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div id="links" class="toggle-links">
+          <div class="description"> developer in birmingham, alabama. </div>
+          <div class="link">
+            <div ng-repeat="action in actions">
+              <a id="{{action.name}}button" href="{{action.link}}" class="links">{{action.name}}</a>
+            </div>
           </div>
         </div>
       </div>
