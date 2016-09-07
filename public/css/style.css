@@ -14,6 +14,7 @@ a:link {
 /*sidebar*/
 .sidebar {
   float: left;
+  bottom:0;
   position:fixed;
   width: 25%;
   height: 100%;
@@ -27,17 +28,22 @@ a:link {
 .sidebar .title {
   font-size: 70px;
   font-family: "Elephant";
-  padding-top: 450px;
+  bottom:0;
+  position:absolute;
+  padding-bottom: 260px;
 }
 .sidebar .description {
+  bottom:0;
+  position:absolute;
+  padding-bottom: 225px;
   font-size: 27px;
 }
-.sidebar .link {
+.sidebar .pages {
   color: white;
   bottom:0;
-  position:fixed;
+  position:absolute;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 35px;
   font-size: 20px;
   padding-left: 10px;
 }
@@ -90,19 +96,25 @@ a:link {
     width: 100%;
     height: 8%;
     position:relative;
+    bottom:auto;
   }
   .sidebar .title {
     font-size: 40px;
     padding-top: 15px;
-    padding-bottom: 5px;
+    padding-bottom: 0px;
+    position: relative;
+    bottom:auto;
   }
   .sidebar .description {
     font-size: 25px;
     padding-top: 0px;
+    padding-bottom: 10px;
+    position: relative;
+    bottom:auto;
   }
-  .sidebar .link {
+  .sidebar .pages {
     padding-bottom: 15px;
-    padding-top: 15px;
+    padding-top: 0px;
     bottom:auto;
     position:relative;
   }
@@ -119,6 +131,12 @@ a:link {
 }
 
 @media (min-width: 1200px) {
+  .sidebar .title {
+    padding-bottom: 305px;
+  }
+  .sidebar .description {
+    padding-bottom: 200px;
+  }
   .mobile-toggle {
     display: none;
   }
@@ -127,10 +145,11 @@ a:link {
   }
 }
 
-@media (min-width: 1429px) {
+@media (min-width: 1334px) {
   .sidebar .title {
-    padding-top: 480px;
+    padding-bottom: 280px;
   }
+
   .mobile-toggle {
     display: none;
   }
