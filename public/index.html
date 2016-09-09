@@ -21,7 +21,7 @@
 
     <script type="text/ng-template" id="experience.html">
       <h1 class="labels"> Experience and Skills </h1>
-      <h2 class="labels"> Job History (Relevant Experience)</h2>
+      <h2 class="labels"> Relevant Job History </h2>
       <h3> Command Alkon - Birmingham, AL </h3>
       <h4> Programmer Analyst - Full-time (February 2015 - Present) </h4>
       <h5> Work on Mobile Development team </h5>
@@ -109,12 +109,12 @@
         <div class="title">
           Amy Eddins
         </div>
-        <button class="mobile-toggle" ng-click="toggleLinks()">
+        <button class="mobile-toggle" ng-click="toggleLinks('Both')">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <div id="links" class="toggle-links">
+        <div ng-class="toggle ? 'toggle-links.open' : 'toggle-links'">
           <div class="description"> developer in birmingham, alabama. </div>
           <div class="pages">
             <div ng-repeat="action in actions">
@@ -123,7 +123,7 @@
           </div>
         </div>
       </div>
-      <ng-view class="content"></ng-view>
+      <ng-view class="content" ng-click="toggleLinks('Off')"></ng-view>
     </div>
 
   </body>

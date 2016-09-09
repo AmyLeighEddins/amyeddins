@@ -24,6 +24,7 @@ app.config(['$routeProvider', function($routeProvider) {
 }]);
 
 app.controller('MainController', ['$scope', function($scope){
+  $scope.toggle = false;
   $scope.actions = [
     {"id": 1, name:"about", link: "#/About"},
     {"id": 2, name:"experience and skills", link: "#/Experience"},
@@ -33,12 +34,9 @@ app.controller('MainController', ['$scope', function($scope){
     {"id": 6, name:"contact", link: "#/Contact"},
   ];
   $scope.currentAction = $scope.actions[0];
-  $scope.toggleLinks = function() {
-    var x = document.getElementById("links");
-    if (x.className === "toggle-links") {
-        x.className += ".open";
-    } else {
-        x.className = "toggle-links";
+  $scope.toggleLinks = function(input) {
+    if (input === "Both" || (input === "Off" && $scope.toggle === true)) {
+        $scope.toggle = !$scope.toggle;
     }
   };
 }]);
