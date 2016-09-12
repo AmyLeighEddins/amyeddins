@@ -35,8 +35,11 @@ app.controller('MainController', ['$scope', function($scope){
   ];
   $scope.currentAction = $scope.actions[0];
   $scope.toggleLinks = function(input) {
-    if (input === "Both" || (input === "Off" && $scope.toggle === true)) {
-        $scope.toggle = !$scope.toggle;
+    if (angular.isDefined(input)) {
+      $scope.toggle = input;
+    }
+    else {
+      $scope.toggle = !$scope.toggle;
     }
   };
 }]);
