@@ -24,24 +24,7 @@ app.config(['$routeProvider', function($routeProvider) {
 }]);
 
 app.controller('MainController', ['$scope', function($scope){
-  $scope.toggle = false;
-  $scope.actions = [
-    {"id": 1, name:"about", link: "#/About"},
-    {"id": 2, name:"experience and skills", link: "#/Experience"},
-    // {"id": 3, name:"portfolio", link: "#/Portfolio"},
-    {"id": 4, name:"github", link: "https://github.com/AmyLeighEddins"},
-    {"id": 5, name:"linkedin", link: "https://www.linkedin.com/in/amy-eddins-8a223571"},
-    {"id": 6, name:"contact", link: "#/Contact"},
-  ];
-  $scope.currentAction = $scope.actions[0];
-  $scope.toggleLinks = function(input) {
-    if (angular.isDefined(input)) {
-      $scope.toggle = input;
-    }
-    else {
-      $scope.toggle = !$scope.toggle;
-    }
-  };
+
 }]);
 
 app.controller('AboutController', ['$scope', '$location', function($scope, $location){
