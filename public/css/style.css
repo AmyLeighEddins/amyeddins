@@ -32,7 +32,7 @@ drawer {
   width: 25%;
   height: 100%;
   font-family: "Century Gothic";
-  background-color: rgb(91, 62, 126);
+  background-color: rgb(47, 33, 65);
   color: white;
   padding-left: 30px;
   padding-right: 20px;
@@ -107,7 +107,7 @@ drawer {
   font-weight: bold;
 }
 .content {
-  color: rgb(91, 62, 126);
+  color: rgb(47, 33, 65);
   float: left;
   padding-left: 27%;
   height: 100%;
@@ -125,7 +125,7 @@ drawer {
     display:block;
     padding-right: 0px;
     padding-left: 0px;
-    background-color: rgb(91, 62, 126);
+    background-color: rgb(47, 33, 65);
     position: static;
     bottom:auto;
   }
@@ -137,7 +137,7 @@ drawer {
     position: relative;
     padding-left: 20px;
     padding-right: 0px;
-    background-color: rgb(91, 62, 126);
+    background-color: rgb(47, 33, 65);
     bottom:auto;
   }
   .sidebar .description {
@@ -145,24 +145,24 @@ drawer {
     width: 100%;
     padding-top: 0px;
     padding-bottom: 10px;
-    background-color: rgb(91, 62, 126);
+    background-color: rgb(47, 33, 65);
     position:relative;
     padding-left: 0px;
     padding-right: 0px;
     border-left: 20px solid;
-    border-color: rgb(91, 62, 126);
+    border-color: rgb(47, 33, 65);
     bottom:auto;
   }
   .sidebar .pages {
     padding-bottom: 15px;
     width: 100%;
-    background-color: rgb(91, 62, 126);
+    background-color: rgb(47, 33, 65);
     padding-top: 0px;
     bottom:auto;
     padding-left: 0px;
     padding-right: 0px;
     border-left: 30px solid;
-    border-color: rgb(91, 62, 126);
+    border-color: rgb(47, 33, 65);
     position:relative;
   }
   .toggle-links.open {
